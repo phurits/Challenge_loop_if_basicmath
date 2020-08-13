@@ -29,7 +29,7 @@ int main()
 	printf("\nAverage = %.1lf",tt/n);
 	sd = sqrt((n * (tt_pow)-pow(tt, 2)) / (n * (n - 1)));
 	if (n == 1)
-		printf("\nSD = Error");  // n = 1 จะทำให้เกิด error เนีื่องจากส่วนเป็น 0 ไม่ได้
+		printf("\nSD = Error");  
 	else
 		printf("\nSD = %.2lf", sd);
 
