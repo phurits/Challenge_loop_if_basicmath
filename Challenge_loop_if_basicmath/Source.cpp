@@ -28,6 +28,10 @@ int main()
 	}
 	printf("\nAverage = %.1lf",tt/n);
 	sd = sqrt((n * (tt_pow)-pow(tt, 2)) / (n * (n - 1)));
-	printf("\nSD = %.2lf", sd);
+	if (n == 1)
+		printf("\nSD = Error");  // n = 1 จะทำให้เกิด error เนีื่องจากส่วนเป็น 0 ไม่ได้
+	else
+		printf("\nSD = %.2lf", sd);
+
 	return 0;
 }
